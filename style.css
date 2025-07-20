@@ -86,3 +86,13 @@
     position: relative;
     left: -150px;
 }
+/* Section-Products  */
+.products{
+    max-width: 1140px;
+    margin: 140px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px 32px;
+    border: 2px solid black;
+}
