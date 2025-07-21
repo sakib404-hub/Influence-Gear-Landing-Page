@@ -22,6 +22,9 @@
     border: 2px solid aliceblue;
     transition: 0.5s all ease;
 }
+.center{
+    text-align: center;
+}
 
 /* Navbar Styling  */
 .navbar{
@@ -72,20 +75,17 @@
     margin: 30px 0;
 }
 .banner-image{
-    border: 2px solid red;
+    height: 410px;
+    width: 450px;
+    background-image: url("Photos/Circle\ design.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner-image .img1{
-    z-index: 10;
-    position: relative;
-    /* top: -400px; */
-    right: -300px;
-    top: -20px;
+    
 }
-.banner-image .img2{
-    z-index: -1;
-    position: relative;
-    left: -150px;
-}
+
 /* Section-Products  */
 .products{
     max-width: 1140px;
@@ -95,4 +95,49 @@
     justify-content: space-around;
     padding: 24px 32px;
     border: 2px solid black;
+}
+/* Section Products-collection   */
+.products-collection{
+    max-width: 1140px;
+    height: auto;
+    margin: 140px auto;
+    /* text-align: center; */
+    border: 2px solid black;
+}
+.box{
+    padding: 10px;
+    max-width: 340px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
+}
+.feedback{
+    display: flex;
+    align-items: center;
+    /* justify-content: center */
+}
+.feedback > i{
+    color: rgba(255, 166, 0, 0.664);
+}
+.box-container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.product-collection-title{
+    font-size: 28px;
+    font-weight: 700;
+}
+.box-title{
+    font-size: 28px;
+    font-weight: 600;
+}
+.box-price{
+    font-size: 24px;
+    font-weight: 400;
 }
