@@ -210,10 +210,21 @@ footer{
     .products{
        display: grid;
        grid-template-columns: repeat(3, 1fr);
-       gap: 30px;
+       gap: 10px;
+       padding: 10px;
     }
     .navbar ul{
         display: none;
+    }
+    .gear{
+        width: 100%;
+    }
+    .img1{
+        width: 100%;
+    }
+    .banner-image{
+        height: 100%;
+        width: 100%;
     }
 }
 @media screen and (min-width: 727px) and (max-width: 992px) {
