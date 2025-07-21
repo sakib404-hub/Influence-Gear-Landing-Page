@@ -15,7 +15,7 @@
     padding: 8px 16px;
     border: 2px solid white;
     border-radius: 20px;
-     transition: 0.5s all ease;
+    transition: 0.5s all ease;
 }
 .btn-primary:hover{
     transform: scale(1.1);
@@ -29,7 +29,7 @@
 /* Navbar Styling  */
 .navbar{
     height: 80px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,16 +55,18 @@
 }
 /* Banner Styling  */
 .banner{
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 140px auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    padding: 10px;
 }
 .banner-content{
     max-width: 500px;
     height: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 16px 32px;
 }
 .banner-title{
@@ -75,17 +77,13 @@
     margin: 30px 0;
 }
 .banner-image{
-    height: 410px;
+    height: 450px;
     width: 450px;
     background-image: url("Photos/Circle\ design.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.banner-image .img1{
-    
-}
-
 /* Section-Products  */
 .products{
     max-width: 1140px;
@@ -94,7 +92,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 24px 32px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 /* Section Products-collection   */
 .products-collection{
@@ -102,7 +100,7 @@
     height: auto;
     margin: 140px auto;
     /* text-align: center; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .box{
     padding: 10px;
@@ -140,4 +138,29 @@
 .box-price{
     font-size: 24px;
     font-weight: 400;
+}
+/* making it responsive  */
+@media screen and (max-width: 726px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .box-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .products{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 30px;
+    }
+    .navbar ul{
+        display: none;
+    }
+}
+@media screen and (min-width: 727px) and (max-width: 992px) {
+     .banner{
+        flex-direction: column-reverse;
+    }
+     .box-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
